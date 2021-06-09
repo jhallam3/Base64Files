@@ -13,8 +13,8 @@ namespace Base64Files
         {
             try
             {
-                var path = args[0];
-                //var path = "/Users/jonhallam/Downloads";
+                //var path = args[0];
+                var path = "/Users/jonhallam/Downloads";
             
                 //var path = "/Users/jonhallam/Downloads/0000-004   34.xml";
             
@@ -56,7 +56,7 @@ namespace Base64Files
             string filename;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                filename = file.Split("\"").Last();
+                filename = file.Split("\\").Last();
             }
             else
             {

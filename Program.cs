@@ -27,9 +27,14 @@ namespace Base64Files
                 {
                     files = Directory.GetFiles(path);
                     List<Base64File> lb64F = new List<Base64File>();
+                    
                     foreach (var file in files)
                     {
-                        lb64F.Add(GetFileAndContents(file));
+                        var content = GetFileAndContents(file);
+                        if (content != null)
+                        {
+                            lb64F.Add(content);
+                        }
                     }
                     json = JsonConvert.SerializeObject(lb64F, Formatting.Indented);
                 }

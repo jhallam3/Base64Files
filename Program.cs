@@ -13,8 +13,8 @@ namespace Base64Files
         {
             try
             {
-                //var path = args[0];
-                var path = "/Users/jonhallam/Downloads";
+                var path = args[0];
+                //var path = "/Users/jonhallam/Downloads";
             
                 //var path = "/Users/jonhallam/Downloads/0000-004   34.xml";
             

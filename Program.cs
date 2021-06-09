@@ -50,7 +50,7 @@ namespace Base64Files
             }
             catch (Exception e)
             {
-                Console.WriteLine("either a full path or a full file location needs to be added to the end of the commandline tool");
+                Console.WriteLine("either a full path or a full file location needs to be added to the end of this commandline tool");
                 throw;
             }
         }

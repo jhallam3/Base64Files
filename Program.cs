@@ -40,7 +40,7 @@ namespace Base64Files
 
         private static Base64File GetFileAndContents(string file)
         {
-            if (file.Contains(".DS_Store")) return null;
+            if (file.Contains(".DS_Store") || file.Contains(".localized")) return null;
             var returnData = new Base64File
             {
                 Contents = Convert.ToBase64String(File.ReadAllBytes(file)),
